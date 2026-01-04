@@ -34,7 +34,7 @@ topology:
     SPINE1:
       kind: ceos
       mgmt-ipv4: 172.100.100.101
-      startup-config: ./configs/SPINE1.cfg
+      startup-config: ../configs/SPINE1.cfg
       ports:
         - '22001:22'
         - '8001:80'
@@ -47,7 +47,7 @@ topology:
     LEAF1:
       kind: ceos
       mgmt-ipv4: 172.100.100.105
-      startup-config: ./configs/LEAF1.cfg
+      startup-config: ../configs/LEAF1.cfg
       ports:
         - '22005:22'
         - '8005:80'
@@ -56,7 +56,7 @@ topology:
     LEAF2:
       kind: ceos
       mgmt-ipv4: 172.100.100.106
-      startup-config: ./configs/LEAF2.cfg
+      startup-config: ../configs/LEAF2.cfg
       ports:
         - '22006:22'
         - '8006:80'
@@ -65,7 +65,7 @@ topology:
     LEAF3:
       kind: ceos
       mgmt-ipv4: 172.100.100.107
-      startup-config: ./configs/LEAF3.cfg
+      startup-config: ../configs/LEAF3.cfg
       ports:
         - '22007:22'
         - '8007:80'
@@ -74,7 +74,7 @@ topology:
     LEAF4:
       kind: ceos
       mgmt-ipv4: 172.100.100.108
-      startup-config: ./configs/LEAF4.cfg
+      startup-config: ../configs/LEAF4.cfg
       ports:
         - '22008:22'
         - '8008:80'
@@ -83,7 +83,7 @@ topology:
     PEG:
       kind: ceos
       mgmt-ipv4: 172.100.100.109
-      startup-config: ./configs/PEG.cfg
+      startup-config: ../configs/PEG.cfg
       ports:
         - '22009:22'
         - '8009:80'
@@ -101,7 +101,7 @@ topology:
     RP:
       kind: ceos
       mgmt-ipv4: 172.100.100.111
-      startup-config: ./configs/RP.cfg
+      startup-config: ../configs/RP.cfg
       ports:
         - '22011:22'
         - '8011:80'
