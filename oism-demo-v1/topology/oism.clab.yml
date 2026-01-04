@@ -19,7 +19,8 @@ topology:
 
   kinds:
     ceos:
-      image: ceos:4.30.2F
+      #image: ceos:4.30.2F
+      image: ceos:4.35.1F
       memory: 4g
     linux:
       image: mitchv85/devhost
@@ -116,8 +117,8 @@ topology:
       mgmt-ipv4: 172.100.100.201
       ports:
         - '22201:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.101/24 -g 10.10.10.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.101/24 -g 10.10.10.1
 
     HostB:
       kind: linux
@@ -125,8 +126,8 @@ topology:
       mgmt-ipv4: 172.100.100.202
       ports:
         - '22202:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.101/24 -g 10.20.20.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.101/24 -g 10.20.20.1
 
     HostC:
       kind: linux
@@ -134,8 +135,8 @@ topology:
       mgmt-ipv4: 172.100.100.203
       ports:
         - '22203:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.30.30.101/24 -g 10.30.30.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.30.30.101/24 -g 10.30.30.1
 
     HostD:
       kind: linux
@@ -143,8 +144,8 @@ topology:
       mgmt-ipv4: 172.100.100.204
       ports:
         - '22204:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.102/24 -g 10.10.10.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.102/24 -g 10.10.10.1
 
     HostE:
       kind: linux
@@ -152,8 +153,8 @@ topology:
       mgmt-ipv4: 172.100.100.205
       ports:
         - '22205:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.102/24 -g 10.20.20.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.102/24 -g 10.20.20.1
 
     HostF:
       kind: linux
@@ -161,8 +162,8 @@ topology:
       mgmt-ipv4: 172.100.100.206
       ports:
         - '22206:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.30.30.102/24 -g 10.30.30.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.30.30.102/24 -g 10.30.30.1
 
     HostG:
       kind: linux
@@ -170,8 +171,8 @@ topology:
       mgmt-ipv4: 172.100.100.207
       ports:
         - '22207:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.103/24 -g 10.10.10.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.10.10.103/24 -g 10.10.10.1
 
     HostH:
       kind: linux
@@ -179,8 +180,8 @@ topology:
       mgmt-ipv4: 172.100.100.208
       ports:
         - '22208:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.103/24 -g 10.20.20.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.20.20.103/24 -g 10.20.20.1
 
     HostI:
       kind: linux
@@ -188,8 +189,8 @@ topology:
       mgmt-ipv4: 172.100.100.209
       ports:
         - '22209:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.201.201.101/24 -g 10.201.201.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.201.201.101/24 -g 10.201.201.1
 
     HostJ:
       kind: linux
@@ -197,8 +198,8 @@ topology:
       mgmt-ipv4: 172.100.100.210
       ports:
         - '22210:22'
-      exec:
-        - bash /usr/local/bin/hostnetconfig.sh -i 10.202.202.101/24 -g 10.202.202.1
+      # exec:
+      #   - bash /usr/local/bin/hostnetconfig.sh -i 10.202.202.101/24 -g 10.202.202.1
 
   links:
 ######################
