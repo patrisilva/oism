@@ -92,7 +92,7 @@ topology:
     SW1:
       kind: ceos
       mgmt-ipv4: 172.100.100.110
-      startup-config: ./configs/SW1.cfg
+      startup-config: ../configs/SW1.cfg
       ports:
         - '22010:22'
         - '8010:80'
