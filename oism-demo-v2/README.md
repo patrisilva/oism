@@ -29,13 +29,13 @@ From the terminal:
 ![Topology](./assets/images/topo.png)
 
 ## Description
-This topology is a multi-domain multicast design that combines EVPN, PIM, and external multicast domains. I’ll walk through it layer by layer and explain how multicast actually works end-to-end in this diagram.
+This topology is a multi-domain multicast design that combines EVPN, PIM, and external multicast domains.
 
 ⸻
 
 1️⃣ Big picture (what this design is doing)
 
-You have three multicast domains interconnected:
+There are three multicast domains interconnected:
 	1.	External PIM Domain (VRF PROD)
 	•	Traditional PIM Sparse Mode
 	•	Central RP(s)
