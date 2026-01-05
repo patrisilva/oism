@@ -19,7 +19,8 @@ topology:
 
   kinds:
     ceos:
-      image: ceos:latest
+      #image: ceos:latest
+      image: ceos:4.35.1F
       env:
         CLAB_MGMT_VRF: MGMT
     linux:
